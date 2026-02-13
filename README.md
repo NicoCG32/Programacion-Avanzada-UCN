@@ -11,6 +11,7 @@ Se han implementado soluciones completas para las siguientes pruebas:
 
 - **Programación Orientada a Objetos**
   - ✅ [Prueba 1 - 2025 S1](Prog.%20Orientada%20a%20Objetos/PRUEBA%201/2025%20S1/Solución/) **Completa** - Ruteo con salida y diagrama de objetos + Programa con multiplicidad 1...N
+  - ⚠️ [Prueba 1 - 2023 S2](Prog.%20Orientada%20a%20Objetos/PRUEBA%201/2023%20S2/Solución/) **Implementada** - Ruteo de línea a línea + Programa con multiplicidad N...N
 
 - **Técnicas y Metodologías de Programación Avanzada**
   - ✅ [Prueba 1 - 2025 S1](Técnicas%20y%20Metodologías%20de%20Prog.%20Avanz/PRUEBA%201/2025%20S1/Solución/) **Completa**
