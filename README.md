@@ -9,6 +9,9 @@ Recopilación de pruebas y material de apoyo para **Programación Orientada a Ob
 
 Se han implementado soluciones completas para las siguientes pruebas:
 
+- **Programación Orientada a Objetos**
+  - ✅ [Prueba 1 - 2025 S1](Prog.%20Orientada%20a%20Objetos/PRUEBA%201/2025%20S1/Solución/) **Completa** - Ruteo con salida y diagrama de objetos + Programa con multiplicidad 1...N
+
 - **Técnicas y Metodologías de Programación Avanzada**
   - ✅ [Prueba 1 - 2025 S1](Técnicas%20y%20Metodologías%20de%20Prog.%20Avanz/PRUEBA%201/2025%20S1/Solución/) **Completa**
 
