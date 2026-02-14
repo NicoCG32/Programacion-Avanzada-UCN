@@ -4,16 +4,26 @@ Recopilación de pruebas y material de apoyo para **Programación Orientada a Ob
 
 ---
 
-
 ## Pruebas Resueltas
 
 Se han implementado soluciones completas para las siguientes pruebas:
 
-- **Programación Orientada a Objetos**
+### Programación Orientada a Objetos
+  
+  **Prueba 1**
+  
   - ✅ [Prueba 1 - 2025 S1](Prog.%20Orientada%20a%20Objetos/PRUEBA%201/2025%20S1/Solución/) **Completa** - Ruteo con salida y diagrama de objetos + Programa con multiplicidad 1...N
   - ⚠️ [Prueba 1 - 2023 S2](Prog.%20Orientada%20a%20Objetos/PRUEBA%201/2023%20S2/Solución/) **Implementada** - Ruteo de línea a línea + Programa con multiplicidad N...N
 
-- **Técnicas y Metodologías de Programación Avanzada**
+  **Prueba 2**
+
+  - ✅ [Prueba 2 - 2024 S1](Prog.%20Orientada%20a%20Objetos/PRUEBA%202/2024%20S1/Solución/) **Completa** - Ruteo GUI + Programa con Visitor
+  - ✅ [Prueba 2 - 2024 S2](Prog.%20Orientada%20a%20Objetos/PRUEBA%202/2024%20S2/Solución/) **Completa** - Ruteo GUI dinámico + Programa Strategy y Visitor
+
+### Técnicas y Metodologías de Programación Avanzada
+
+  **Prueba 1**
+  
   - ✅ [Prueba 1 - 2025 S1](Técnicas%20y%20Metodologías%20de%20Prog.%20Avanz/PRUEBA%201/2025%20S1/Solución/) **Completa**
 
 **Otras evaluaciones**: Se encuentran en estado **Por Implementar** pero cuentan con enunciados en PDF, carpeta `Solución` con estructura base, README con instrucciones para cargar en Eclipse, y carpeta `src/` lista para agregar código.
@@ -43,10 +53,10 @@ Programación-Avanzada-UCN/
 ### Contenido de Cada Evaluación
 
 - **PRUEBA.pdf** o **Prueba - Parte 1/2.pdf**: Enunciado de la evaluación
-- **README.md**: Descripción de la prueba y guía de ejecución
+- **Archivos.txt**: Los txt a cargar (si aplica)
 - **Solución/**: Carpeta con la implementación
   - **src/**: Código fuente Java
-  - **README.md**: Especificaciones y cómo cargar en Eclipse
+  - **README.md**: Especificaciones de la prueba y cómo cargar en Eclipse
   - **referencia/**: Soluciones de referencia (cuando aplica)
   - **EXPLICACION.md**: Documentación detallada de algoritmos (cuando aplica)
 
@@ -274,3 +284,322 @@ Las soluciones están en desarrollo y se actualizan constantemente.
   - Deadlocks
   - Race conditions
 - **Soluciones**: Sincronización crítica, estructuras thread-safe
+
+--- 
+
+# Glosario NicoPablo
+
+## 1. Clase vs Objeto
+
+La **clase** es el molde o plano que define la estructura y el comportamiento de un conjunto de objetos. En ella se especifican:
+
+- Los **atributos** (estado).
+- Los **métodos** (comportamiento).
+- Las reglas internas que regulan su funcionamiento.
+
+Puede entenderse como la receta y el cortador de galletas.
+
+El **objeto**, en cambio, es una **instancia concreta** creada a partir de una clase.  
+Es la galleta real, con valores propios en sus atributos.
+
+Conceptualmente:
+
+- La clase define la estructura.
+- El objeto contiene el estado.
+- La clase existe en el código.
+- El objeto existe en memoria durante la ejecución.
+
+---
+
+## 2. Abstracción
+
+La **abstracción** consiste en interpretar y modelar un problema del mundo real, identificando los elementos esenciales y omitiendo los irrelevantes.
+
+Antes de programar, se debe decidir:
+
+- Qué entidades forman parte del problema.
+- Qué clases se necesitan.
+- Qué atributos son relevantes.
+- Qué comportamientos deben modelarse.
+
+Por ejemplo, si un amigo te pide guardar ropa, puedes pensar en un clóset, una habitación o una caja; tú defines la forma y las propiedades específicas.
+
+Abstraer implica:
+
+- Simplificar la realidad.
+- Enfocarse en lo necesario para resolver el problema.
+- Construir un modelo coherente y funcional.
+
+Una mala abstracción conduce a un diseño deficiente.
+
+---
+
+## 3. Encapsulamiento
+
+El **encapsulamiento** consiste en controlar la visibilidad y el acceso a los atributos y métodos de una clase.
+
+Su objetivo es:
+
+- Proteger el estado interno.
+- Evitar accesos indebidos.
+- Exponer únicamente lo necesario.
+
+No todos los atributos deben ser públicos.  
+No todas las operaciones deben ser accesibles desde cualquier parte del sistema.
+
+Aplicado a la arquitectura:
+
+- La `App` realiza solicitudes.
+- El `Sistema` (interface) define los métodos disponibles.
+- El `SistemaImpl` implementa la lógica interna.
+
+La App no conoce cómo se ejecutan las operaciones; solo conoce qué puede solicitar.
+
+Esto permite mantener el control sobre la lógica interna y reducir el acoplamiento entre componentes.
+
+---
+
+## 4. Herencia
+
+La **herencia** permite que una clase derive de otra, reutilizando atributos y métodos comunes.
+
+Se utiliza cuando varias clases comparten características similares.
+
+En lugar de duplicar código:
+
+- Se define una clase base con los elementos comunes.
+- Las subclases heredan esos elementos.
+
+Si la clase base no debe instanciarse directamente, se declara como `abstract`.
+
+Esto implica que:
+
+- No se pueden crear objetos de la clase base.
+- Solo se pueden crear instancias de las subclases concretas.
+- Todas comparten la estructura y comportamiento común definido en la clase base.
+
+La herencia representa una relación del tipo:
+
+> “Es un tipo de…”
+
+Debe utilizarse únicamente cuando esa relación conceptual es válida.
+
+---
+
+## 5. Polimorfismo
+
+El **polimorfismo** permite que un mismo nombre de método represente comportamientos distintos según el contexto.
+
+### 🔹 Polimorfismo en métodos (Sobrecarga)
+
+Consiste en definir varios métodos con el mismo nombre pero con diferentes listas de parámetros.
+
+El compilador determina cuál método ejecutar según los argumentos proporcionados.
+
+Este tipo de polimorfismo se resuelve en tiempo de compilación.
+
+---
+
+### 🔹 Polimorfismo en clases (Sobreescritura)
+
+Ocurre cuando una subclase redefine un método heredado de la clase base, proporcionando una implementación específica.
+
+Por ejemplo, todos los peleadores tienen un método `golpear()`, pero:
+
+- El boxeador golpea a puño cerrado.
+- El karateka a mano abierta.
+- etc.
+
+El nombre del método es el mismo, pero el comportamiento depende del tipo real del objeto en tiempo de ejecución.
+
+Este es el polimorfismo más relevante en Programación Orientada a Objetos.
+
+---
+
+## 6. Interfaces
+
+Una **interfaz** define un conjunto de métodos que una clase debe implementar, sin especificar cómo deben hacerlo.
+
+Puede compararse con el panel de controles de un auto: los botones y palancas disponibles para el conductor.
+
+El conductor:
+
+- No necesita conocer el funcionamiento interno (tuercas, motores, electrónica).
+- Solo utiliza los controles disponibles.
+
+En programación:
+
+- La interfaz define qué métodos están disponibles.
+- La implementación concreta define cómo funcionan.
+
+El mejor ejemplo es la implementación List, esta tiene muchas implementaciones pero las más utilizadas son ArrayList y LinkedList, es probable que tú hayas utilizado alguna de estas, ocupas sus métodos (métodos de la interfaz List), no sabes cómo funcionan internamente, pero sabes que cumplen una función, porque ello está definido en su contrato.
+
+Tú mismo podrías crear tu clase Lista y que implemente la interfaz List, para definir sus mecanismos con tu propia lógica
+---
+
+### 🔹 El Contrato
+
+Las interfaces deben incluir un mensaje claro que indique qué hacen los métodos definidos.  
+Ese mensaje constituye el **CONTRATO**.
+
+El contrato especifica:
+
+- Qué hace el método.
+- Qué parámetros recibe.
+- Qué valor retorna.
+- Qué excepciones puede lanzar.
+
+Existe un estándar de documentación llamado **Javadoc**, que utiliza etiquetas como:
+
+- `@param` : Qué parámetros recibe el método.
+- `@throws` : Qué excepciones lanza el método.
+- `@return` : Qué devuelve el método.
+- `@author` : Quién es el autor de la interfaz.
+
+El contrato puede visualizarse desde el cliente posicionando el mouse sobre la interfaz o sobre `interfaz.metodo`.
+
+El cliente conoce qué hace el método, pero no cómo lo hace.
+
+## 7. Principios SOLID
+
+Los principios **SOLID** proporcionan lineamientos para diseñar software mantenible y escalable.
+
+Su correcta aplicación permite:
+
+- Evitar clases excesivamente grandes.
+- Reducir dependencias innecesarias.
+- Facilitar modificaciones futuras.
+- Mejorar la legibilidad del código.
+
+No es imprescindible memorizar cada principio, sino comprender su finalidad: organizar responsabilidades y minimizar el acoplamiento.
+
+## 8. Arquitectura
+
+### Arquitectura App / Sistema / SistemaImpl
+
+#### 🔹 App
+
+Es el cliente.
+
+Por cliente se entiende una entidad que solicita servicios y recibe resultados, pero no implementa la lógica interna. Por eso se denomina "cliente" porque pide cosas concretas sin la necesidad de entender cómo se le dan.
+
+Desde la App:
+
+- Se realizan solicitudes (pedir promedios, mayores, menores, etc.).
+- Se muestran resultados por pantalla.
+- Se gestiona la interacción con el usuario (Scanner, prints).
+
+La App no contiene lógica de implementación, porque el cliente no hace cosas, sólo las pide y las recibe.
+
+---
+
+#### 🔹 Sistema (interface)
+
+Define qué puede solicitar el cliente.
+
+Actúa como el panel de botones disponible para la App o el cliente.
+
+Generalmente retorna `String` para que la App los imprima.
+
+La App (el cliente) sólo puede ver la interfaz (los botones con sus etiquetas y contratos), no la implementación concreta de estos botones.
+
+---
+
+#### 🔹 SistemaImpl
+
+Implementa la lógica real de cada método definido en `Sistema`.
+
+Aquí se encuentran:
+
+- Métodos privados.
+- Algoritmos internos.
+- Reglas de negocio.
+
+Puede haber distintas implementaciones de `Sistema` según la lógica requerida.
+
+Este diseño permite cambiar la implementación sin modificar la App.
+
+---
+
+Hay otros tipos de Arquitectura pero no se contemplan en el curso.
+
+## 9. Patrones de Diseño
+
+### 🔹 Factory
+
+
+El patrón **Factory** delega la responsabilidad de creación de objetos a una clase especializada, en lugar de realizar la creación directamente en `Sistema`.
+
+Factory se puede implementar como clase o como interfaz, dependiendo de las necesidades del problema. Sin embargo, es recomendable implementarlo como interfaz para definir correctamente su contrato. En ese caso, el Factory se define como un atributo de `SistemaImpl`, que le delega la tarea de crear las instancias.
+
+Esto permite:
+- Centralizar la lógica de creación.
+- Reducir dependencias directas.
+- Facilitar cambios futuros en la construcción de objetos.
+
+---
+
+### 🔹 Singleton
+
+
+El patrón **Singleton** se utiliza cuando una clase debe tener una única instancia durante la ejecución del programa.
+
+Singleton se implementa como clase.
+
+Por ejemplo, el Factory crea instancias particulares, pero ¿necesitas un Factory para crear todas las instancias o cada instancia requiere su propio Factory? Así es, lo último no tiene sentido; una sola fábrica debe crear todas las instancias.
+
+Para este tipo de situaciones se utiliza Singleton, que permite aislar una única instancia.
+
+Generalmente se usa para `SistemaImpl`, ya que rara vez se requiere de más de una implementación del `Sistema`.
+
+---
+
+### 🔹 Visitor
+
+
+Se utiliza **Visitor** cuando se requiere aplicar operaciones distintas según el tipo concreto de objeto dentro de una jerarquía de clases.
+
+Visitor se implementa como interfaz, pues define los "botones" (métodos) del visitor, y sus implementaciones concretas se realizan como clases.
+
+Por ejemplo, distinguir entre Auto, Camioneta y SUV para aplicar lógica distinta a cada uno.
+
+Es útil cuando el problema exige **diferenciar** el comportamiento **según el tipo de instancia**.
+
+---
+
+### 🔹 Strategy
+
+
+Se utiliza **Strategy** cuando se necesita **cambiar el comportamiento de una instancia** específica en tiempo de ejecución.
+
+Strategy se implementa como interfaz, ya que define los "botones" (métodos) de la instancia. Esta instancia cambia su comportamiento según la estrategia implementada por una clase concreta.
+
+Por ejemplo, asignar un modo de manejo distinto a un vehículo.
+
+Permite que **un mismo objeto cambie su algoritmo o forma de operar** sin modificar su clase.
+
+---
+
+### 🔹 Diferencia entre Visitor y Strategy
+
+- Si el comportamiento cambia para la **misma instancia**, se utiliza **Strategy**.
+- Si la lógica cambia según el **tipo concreto de clase**, se utiliza **Visitor**.
+- Si el problema requiere ambas condiciones, es posible combinar ambos patrones.
+
+---
+
+## Secuencia Conceptual Correcta
+
+El orden conceptual adecuado para comprender POO es:
+
+1. Abstraer el problema.
+2. Modelar con clases.
+3. Aplicar encapsulamiento.
+4. Utilizar herencia cuando corresponda.
+5. Implementar polimorfismo.
+6. Definir y desacoplar mediante interfaces.
+7. Organizar el diseño con principios SOLID.
+8. Optimizar la estructura con patrones de diseño.
+9. Implementar interfaces y estructura del código.
+
+Este enfoque permite pasar de programar por ensayo y error a diseñar soluciones de manera estructurada y profesional.
