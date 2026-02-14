@@ -24,7 +24,11 @@ Se han implementado soluciones completas para las siguientes pruebas:
 
   **Prueba 1**
   
-  - ✅ [Prueba 1 - 2025 S1](Técnicas%20y%20Metodologías%20de%20Prog.%20Avanz/PRUEBA%201/2025%20S1/Solución/) **Completa**
+  - ✅ [Prueba 1 - 2025 S1](Técnicas%20y%20Metodologías%20de%20Prog.%20Avanz/PRUEBA%201/2025%20S1/Solución/) **Completa** - Recursión + Divide y Conquista + Árbol Binario de Búsqueda
+
+  **Prueba 2**
+  
+  - ✅ [Prueba 2 - 2024 S2](Técnicas%20y%20Metodologías%20de%20Prog.%20Avanz/PRUEBA%202/2024%20S2/Solución/) **Completa** - Backtracking + Árbol Binario de Búsqueda + Concurrencia con sincronización
 
 **Otras evaluaciones**: Se encuentran en estado **Por Implementar** pero cuentan con enunciados en PDF, carpeta `Solución` con estructura base, README con instrucciones para cargar en Eclipse, y carpeta `src/` lista para agregar código.
 
@@ -435,6 +439,7 @@ En programación:
 El mejor ejemplo es la implementación List, esta tiene muchas implementaciones pero las más utilizadas son ArrayList y LinkedList, es probable que tú hayas utilizado alguna de estas, ocupas sus métodos (métodos de la interfaz List), no sabes cómo funcionan internamente, pero sabes que cumplen una función, porque ello está definido en su contrato.
 
 Tú mismo podrías crear tu clase Lista y que implemente la interfaz List, para definir sus mecanismos con tu propia lógica
+
 ---
 
 ### 🔹 El Contrato
