@@ -17,7 +17,7 @@ Se han implementado soluciones completas para las siguientes pruebas:
 
   **Prueba 2**
 
-  - ✅ [Prueba 2 - 2024 S1](Prog.%20Orientada%20a%20Objetos/PRUEBA%202/2024%20S1/Solución/) **Completa** - Ruteo GUI + Programa con Visitor
+  - ✅ [Prueba 2 - 2024 S1](Prog.%20Orientada%20a%20Objetos/PRUEBA%202/2024%20S1/Solución/) **Completa** - Ruteo GUI dinámico + Programa con Visitor
   - ✅ [Prueba 2 - 2024 S2](Prog.%20Orientada%20a%20Objetos/PRUEBA%202/2024%20S2/Solución/) **Completa** - Ruteo GUI dinámico + Programa Strategy y Visitor
 
 ### Técnicas y Metodologías de Programación Avanzada
