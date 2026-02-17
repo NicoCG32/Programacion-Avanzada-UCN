@@ -13,6 +13,7 @@ Se han implementado soluciones completas para las siguientes pruebas:
   **Prueba 1**
   
   - ✅ [Prueba 1 - 2025 S1](Prog.%20Orientada%20a%20Objetos/PRUEBA%201/2025%20S1/Solución/) **Completa** - Ruteo con salida y diagrama de objetos + Programa con multiplicidad 1...N
+  - ⚠️ [Prueba 1 - 2024 S1](Prog.%20Orientada%20a%20Objetos/PRUEBA%201/2024%20S1/Solución/) **⚠️ RECIÉN ACTUALIZADA** - Ruteo línea a línea con salida + Programa juego por turnos
   - ⚠️ [Prueba 1 - 2023 S2](Prog.%20Orientada%20a%20Objetos/PRUEBA%201/2023%20S2/Solución/) **Implementada** - Ruteo de línea a línea + Programa con multiplicidad N...N
 
   **Prueba 2**
